@@ -5,7 +5,7 @@ loop do
 puts "Entrez un numero de Code Barre:"
 bar_code = gets.chomp
 
-url="http://fr.openfoodfacts.org/api/v0/produit/7613034926814.json"
+url="http://fr.openfoodfacts.org/api/v0/produit/#{barre_code}.json"
 
 json = open(url).read
 
